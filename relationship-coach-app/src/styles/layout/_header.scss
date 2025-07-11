@@ -1,0 +1,20 @@
+@use '../abstracts/index' as *;
+
+.banner {
+   @include background-cover;
+   padding-top: 2rem;
+   padding-bottom: 20rem;
+}
+.logo-top {
+    width: 280px;
+    margin: 0 auto;
+    @include respond-above(sm) {
+        width: auto;
+    }
+}
+.text-center {
+    text-align: center;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
