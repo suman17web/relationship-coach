@@ -5,7 +5,7 @@ import BannerBg from "../../assets/img/banner-img.webp"
 
 const Banner: React.FC = () => {
   return (
-    <Box className="banner" style={{backgroundImage: `url(${BannerBg})`}}>
+    <Box component="header" className="banner" style={{backgroundImage: `url(${BannerBg})`}}>
       <Container>
             <div className='text-center logo-top'>
                 <img src={Logo} alt="Healthy Relationships Coach" />

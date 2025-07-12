@@ -3,7 +3,13 @@
 .banner {
    @include background-cover;
    padding-top: 2rem;
-   padding-bottom: 20rem;
+   padding-bottom: 10rem;
+    @include respond-above(sm) {
+        padding-bottom: 16rem;
+    }
+    @include respond-above(lg) {
+        padding-bottom: 24rem;
+    }
 }
 .logo-top {
     width: 280px;
@@ -17,4 +23,48 @@
 }
 .mt-3 {
     margin-top: 1rem;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.ms-md-auto {
+    @include respond-above(sm) {
+        margin-left: auto;        
+    }
+}
+.mr-md-0 {
+    @include respond-above(sm) {
+        margin-right: 0;        
+    }
+}
+.ms-md-0 {
+    @include respond-above(sm) {
+        margin-left: 0;        
+    }
+}
+.video_box {
+    padding: 0 1rem;
+    padding-bottom: 1.5rem;
+    @include respond-above(sm) {
+        padding-bottom: 3.5rem;
+    }
+    @include respond-above(lg) {
+        padding-bottom: 4.625rem;
+    }
+}
+.video_item {
+    background-color: $text-white;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    max-width: 650px;
+    box-shadow: rgba(17, 12, 46, 0.20) 0px 48px 100px 0px;
+    margin-top: -7rem;
+    @include respond-above(sm) {
+        padding: 2.5rem 1rem;
+        margin-top: -12rem;
+    }
+    @include respond-above(lg) {
+        margin-top: -15rem;
+    }
 }
