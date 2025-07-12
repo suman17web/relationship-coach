@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
       className={className}
       onClick={onClick}
     >
-      {text}
+      <span className='me-2'>{text}</span>
       {showIcon && (
         <span className="arrow">
           <img src={Arrow} alt="Arrow icon" />
