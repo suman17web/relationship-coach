@@ -5,6 +5,7 @@ import Benifit from './components/Benifit';
 import Clifton from './components/Clifton';
 import CliftonAlter from './components/CliftonAlter';
 import UploadDoc from './components/UploadDoc';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Clifton className="my-custom-class"/>
       <CliftonAlter/>
       <UploadDoc/>
+      <Footer/>
     </>
   );
 }

@@ -1,0 +1,90 @@
+@use '../abstracts/index' as *;
+
+.footer-text {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: .875rem;
+    color: $text-dark;
+    a {
+        color: $primary-color;
+    }
+}
+
+.maxw-850 {
+    max-width: 850px;
+}
+
+.footer_card_wrapper {
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+    border-top: 1px solid #000;
+}
+
+.grid_md_6 {
+    display: grid;
+    grid-gap: 1.25rem;
+    @include respond-above(md) {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+.grid_sm_6 {
+    display: grid;
+    grid-gap: 1.25rem;
+    @include respond-above(sm) {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+.footer_card-heading {
+    color: #ADADAD;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 0;
+}
+
+.footer_card-text {
+    color: #ADADAD;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.mt-sm-3 {
+    @include respond-above(sm) {
+        margin-top: 2.5rem;
+    }
+}
+
+.grid-col-manage {
+    display: grid;
+    grid-gap: 1.5rem;
+    @include respond-above(md) {
+        // grid-template-columns: minmax(0,1fr) minmax(0,auto);
+        grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    }
+}
+
+.socila_links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    a {
+        text-decoration: none;
+        margin-right: 1.5rem;
+    }
+}
+
+.flex-lgbox {
+    @include respond-above(md) {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+    }
+}
